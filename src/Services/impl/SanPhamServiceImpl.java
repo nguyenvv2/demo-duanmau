@@ -4,6 +4,7 @@
  */
 package Services.impl;
 
+import DomainModels.SanPham;
 import Reponsitories.SanPhamRepository;
 import Services.SanPhamService;
 import ViewModels.SanPhamViewModel;
@@ -20,6 +21,11 @@ public class SanPhamServiceImpl implements SanPhamService {
     @Override
     public ArrayList<SanPhamViewModel> getList() {
         return sanPhamRepository.getListSanPhamViewModel();
+    }
+
+    @Override
+    public ArrayList<SanPham> getListSanPham() {
+        return sanPhamRepository.getListSanPham();
     }
 
 }

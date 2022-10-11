@@ -3,10 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/nguyenvv/Downloads/DemoLuongBanHang_SV/src/DomainModels/ChucVu.java</file>
-            <file>file:/Users/nguyenvv/Downloads/DemoLuongBanHang_SV/src/Services/impl/ChucVuServiceImpl.java</file>
+            <file>file:/Users/nguyenvv/Downloads/DemoLuongBanHang_SV/src/Services/impl/DanhMucServiceImpl.java</file>
+            <file>file:/Users/nguyenvv/Downloads/DemoLuongBanHang_SV/src/Utilities/DBConnection.java</file>
+            <file>file:/Users/nguyenvv/Downloads/DemoLuongBanHang_SV/src/Views/ViewSanPham.java</file>
+            <file>file:/Users/nguyenvv/Downloads/DemoLuongBanHang_SV/src/Views/ViewBanHang.java</file>
+            <file>file:/Users/nguyenvv/Downloads/DemoLuongBanHang_SV/src/ViewModels/SanPhamViewModel.java</file>
+            <file>file:/Users/nguyenvv/Downloads/DemoLuongBanHang_SV/src/Reponsitories/DanhMucRepository.java</file>
             <file>file:/Users/nguyenvv/Downloads/DemoLuongBanHang_SV/src/DomainModels/DanhMuc.java</file>
-            <file>file:/Users/nguyenvv/Downloads/DemoLuongBanHang_SV/src/Responsitories/ChucVuRepository.java</file>
+            <file>file:/Users/nguyenvv/Downloads/DemoLuongBanHang_SV/src/Application/Application.java</file>
+            <file>file:/Users/nguyenvv/Downloads/DemoLuongBanHang_SV/src/Services/SanPhamService.java</file>
+            <file>file:/Users/nguyenvv/Downloads/DemoLuongBanHang_SV/src/Services/impl/SanPhamServiceImpl.java</file>
+            <file>file:/Users/nguyenvv/Downloads/DemoLuongBanHang_SV/src/Services/DanhMucService.java</file>
         </group>
     </open-files>
 </project-private>

@@ -14,6 +14,6 @@ import Views.ViewSanPham;
 public class Application {
     
     public static void main(String[] args) {
-        new ViewSanPham().setVisible(true);
+        new ViewBanHang().setVisible(true);
     }
 }

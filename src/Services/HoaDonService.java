@@ -4,17 +4,13 @@
  */
 package Services;
 
-import DomainModels.SanPham;
-import ViewModels.SanPhamViewModel;
-import java.util.ArrayList;
+import DomainModels.HoaDon;
 
 /**
  *
- * @author hangnt
+ * @author nguyenvv
  */
-public interface SanPhamService {
+public interface HoaDonService {
     
-    ArrayList<SanPhamViewModel> getList();
-    
-    ArrayList<SanPham> getListSanPham();
+    Boolean saveHoaDon(HoaDon hoaDon);
 }

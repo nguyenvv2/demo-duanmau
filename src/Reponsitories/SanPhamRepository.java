@@ -5,6 +5,7 @@
 package Reponsitories;
 
 import DomainModels.DanhMuc;
+import DomainModels.SanPham;
 import Utilities.DBConnection;
 import ViewModels.SanPhamViewModel;
 import java.sql.Connection;
@@ -35,7 +36,7 @@ public class SanPhamRepository {
                 sanPhamViewModel.setSoLuong(rs.getInt(3));
                 sanPhamViewModel.setGiaNhap(rs.getFloat(4));
                 sanPhamViewModel.setGiaBan(rs.getFloat(5));
-                
+
                 list.add(sanPhamViewModel);
             }
         } catch (Exception e) {
@@ -44,6 +45,27 @@ public class SanPhamRepository {
 
         return list;
     }
-    
+
+    public ArrayList<SanPham> getListSanPham() {
+        String sql = "select ten_san_pham, so_luong,gia_nhap, gia_ban, mieu_ta "
+                + "from san_pham";
+        ArrayList<SanPham> list = new ArrayList<>();
+        try (Connection con = dBConnection.getConnection();
+                PreparedStatement ps = con.prepareStatement(sql)) {
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                SanPham sanPham = new SanPham();
+                sanPham.setTenSanPhamString(rs.getString(1));
+                sanPham.setSoLuong(rs.getInt(2));
+                sanPham.setGiaBan(rs.getDouble(4));
+                sanPham.setGiaNhap(rs.getDouble(3));
+                sanPham.setMieuTa(rs.getString(5));
+                list.add(sanPham);
+            }
+        } catch (Exception e) {
+            e.getMessage();
+        }
+        return list;
+    }
 
 }
